@@ -29,8 +29,8 @@
         const message = textInput.value;
         const delayTime = Number(delayInput.value);
 
-        // Validate inputs
-        if (!message || isNaN(delayTime) {
+        // Validate inputs - FIXED THE MISSING PARENTHESIS HERE
+        if (!message || isNaN(delayTime)) {
           outputDiv.textContent = 'Please enter both text and a valid delay time';
           return;
         }
